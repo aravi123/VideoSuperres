@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+	 <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link rel="stylesheet" href="index.css"> 
+<link rel="stylesheet" href="over.css"> 
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+    <title>Super Resolution</title>
+</head>
+<body class="root">
+	
+<img src="logo.png" class="logo">
+
+<div id="myNav" class="overlay">
+	
+	
+<div class="card">
+  <div class="containers">
+   <form style="text-align:center; padding:10%;" method="post" action="/signup">
+
+	<div className="txtbox"><input  type="text" placeholder="First name" name="firstname"/></div> <br>
+ 
+  <div className="txtbox"><input  type="text" placeholder="Last name" name="lastname"/></div> <br>
+
+	<div className="txtbox"><input  type="password" placeholder="Password" name="password"/></div> <br>
+  
+  <div className="txtbox"><input type="text" placeholder="Email address" name="email"/></div> <br>
+  
+  <div className="txtbox"><input type="text" placeholder="Phone number" name="phonenumber"/></div> <br>
+<input className="bt_signup" type="submit" value="Signup"/>
+</form>
+
+
+  </div>
+
+
+</div>
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+</div>
+
+
+<div id="signup" class="overlay">
+
+<div class="cards">
+  <div class="containers">
+    <form style="text-align:center; padding:10%;" method="post" action="/login">
+<label> Email </label>
+  <div className="txtbox"><input  type="text" value="" name="email"/></div>
+<label> Password </label> 
+  <div className="txtbox"><input  type="password" value="" name="password"/></div> <br>
+<input className="bt_signup" type="submit" value="Login"/>
+</form>
+
+
+  </div>
+
+
+</div>
+  <a href="javascript:void(0)" class="closebtn" onclick="closesignup()">&times;</a>
+</div>
+
+
+
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">Video Super Resolution</a>
+    </div>
+   
+    <ul class="nav navbar-nav navbar-right">
+      <li><a href="#" onclick="openNav()"><span class="glyphicon glyphicon-user" ></span> Sign Up</a></li>
+      <li><a href="#" onclick="opensignup()" ><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+    </ul>
+  </div>
+</nav>
+
+
+<script>
+function openNav() {
+    document.getElementById("myNav").style.height = "100%";
+}
+
+function closeNav() {
+    document.getElementById("myNav").style.height = "0%";
+}
+
+function opensignup() {
+    document.getElementById("signup").style.height = "100%";
+}
+
+function closesignup() {
+    document.getElementById("signup").style.height = "0%";
+}
+
+
+</script>
+     
+</body>
+</html>
+

@@ -1,0 +1,11 @@
+.navbar{
+    height: 70px;
+}
+
+body{
+    text-align: center;
+}
+
+#uploadfile{
+    margin: 0 auto;
+}
